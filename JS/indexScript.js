@@ -5,4 +5,4 @@ import { loginHandler } from "./listeners.js";
 sessionTokenCheck();
 loginHandler();
 sessionExpirationCheck();
-login();
+// login();
