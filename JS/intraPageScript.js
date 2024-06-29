@@ -8,14 +8,7 @@ import { displayAudit } from "./tablesAndGraphs/userDashboard.js";
 import { displayModuleLevel } from "./tablesAndGraphs/userDashboard.js";
 import { displayModuleXP } from "./tablesAndGraphs/userDashboard.js";
 import { getModuleLevel } from "./tablesAndGraphs/userDashboard.js";
-// import { fetchGraphInfo } from "./getInfo/graphInfo.js";
-// import { fetchProgressInfo } from "./getInfo/modulResultInfo.js";
-
 import { calculateModuleXP } from "./tablesAndGraphs/userDashboard.js";
-// import { getPassFail} from  "./tablesAndGraphs/passFailAnalysis.js";
-
-
-
 
 userData()
 intraPage()
