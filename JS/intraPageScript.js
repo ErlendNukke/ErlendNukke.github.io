@@ -30,6 +30,7 @@ export async function intraPage() {
 	const levelInfo = await fetchLevelData();
 	const graphInfo = await fetchGraphInfo();
 	const passAndFailInfo = await fetchProgressInfo();
+	console.log(passAndFailInfo);
 
 
 	// Necessary variables for displaying data.
