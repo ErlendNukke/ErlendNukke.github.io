@@ -6,8 +6,6 @@ import { fetchGraphInfo } from "./getInfo/graphInfo.js";
 import { fetchProgressInfo } from "./getInfo/modulResultInfo.js";
 
 
-
-
 export async function userData() {
 
 	// Check if the session has expired
