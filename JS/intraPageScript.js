@@ -13,6 +13,7 @@ import { audits } from "./tablesAndGraphs/audits.js";
 import { placeProgress } from "./tablesAndGraphs/progressChart.js";
 import { getPassFail } from "./tablesAndGraphs/passFailAnalysis.js";
 import { fetchGraphInfo } from "./getInfo/graphInfo.js";
+import { fetchProgressInfo } from "./getInfo/modulResultInfo.js";
 
 
 userData();
