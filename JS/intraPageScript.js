@@ -27,13 +27,13 @@ export async function intraPage() {
 	// Fetch the necessary data from the GraphQL API.
 	const userInfo = await fetchUserData();
 	const levelInfo = await fetchLevelData();
-	// const graphInfo = await fetchGraphInfo();
-	// const passAndFailInfo = await fetchProgressInfo();
+	const graphInfo = await fetchGraphInfo();
+	const passAndFailInfo = await fetchProgressInfo();
 
 
 	// Necessary variables for displaying data.
 	const { div01XP, piscineGO, piscineJS } = calculateModuleXP(userInfo.xps);
-	// const { goExercises, jsExercises } = getPassFail(passAndFailInfo);
+	const { goExercises, jsExercises } = getPassFail(passAndFailInfo);
 
 	// Display the data received.
 	displayName(`${userInfo.firstName} "${userInfo.login}" ${userInfo.lastName}`);
