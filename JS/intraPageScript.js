@@ -9,9 +9,11 @@ import { displayModuleLevel } from "./tablesAndGraphs/userDashboard.js";
 import { displayModuleXP } from "./tablesAndGraphs/userDashboard.js";
 import { getModuleLevel } from "./tablesAndGraphs/userDashboard.js";
 import { calculateModuleXP } from "./tablesAndGraphs/userDashboard.js";
+import { audits } from "./tablesAndGraphs/audits.js";
 
-userData()
-intraPage()
+
+userData();
+intraPage();
 
 
 // Base func for the profile page.
@@ -36,11 +38,9 @@ export async function intraPage() {
 	displayModuleLevel(getModuleLevel(levelInfo));
 	displayModuleXP(div01XP, piscineGO, piscineJS);
 
-
-
-	// placeAuditPie(userInfo.auditRatio, userInfo.totalUp, userInfo.totalDown);
-	// placeFailCharts(goExercises, jsExercises);
-	// placeProgress(graphInfo, div01XP);
+	audits(userInfo.auditRatio, userInfo.totalUp, userInfo.totalDown);
+	placeFailCharts(goExercises, jsExercises);
+	placeProgress(graphInfo, div01XP);
 
 }
 
