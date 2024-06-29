@@ -14,8 +14,6 @@ import { getModuleLevel } from "./tablesAndGraphs/userDashboard.js";
 import { calculateModuleXP } from "./tablesAndGraphs/userDashboard.js";
 // import { getPassFail} from  "./tablesAndGraphs/passFailAnalysis.js";
 
-import {displayName} from "./tablesAndGraphs/userDashboard.js";
-
 
 
 
