@@ -1,0 +1,27 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.xp-display {
+    margin: 20px 0;
+}
+.module-name, .module-level, .module-xp {
+    padding: 5px;
+}
+.auditL, .audits {
+    margin: 20px 0;
+}
+.legend, .space {
+    display: flex;
+    align-items: center;
+}
+.fake-news {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    margin-right: 5px;
+}
+.green {
+    background: green;
+}
