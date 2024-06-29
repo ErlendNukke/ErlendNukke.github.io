@@ -3,6 +3,10 @@ import { sessionExpirationCheck } from "./session.js";
 import { logoutHandler } from "./listeners.js";
 import { fetchUserData } from "./getInfo/userInfo.js";
 import { fetchLevelData } from "./getInfo/levelInfo.js";
+import { displayName } from "./tablesAndGraphs/userDashboard.js";
+import { displayAudit } from "./tablesAndGraphs/userDashboard.js";
+import { displayModuleLevel } from "./tablesAndGraphs/userDashboard.js";
+import { displayModuleXP } from "./tablesAndGraphs/userDashboard.js";
 // import { fetchGraphInfo } from "./getInfo/graphInfo.js";
 // import { fetchProgressInfo } from "./getInfo/modulResultInfo.js";
 
