@@ -229,8 +229,8 @@ main {
 }
 
 .pie {
-    fill: #27ae60;
-    stroke: #c0392b;
+    fill: #bfd834;
+    stroke: #2b84c0;
     stroke-width: 200;
     stroke-dasharray: 0 628;
     transition: stroke-dasharray 0.3s ease;
@@ -248,11 +248,11 @@ main {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: #c0392b;
+    background-color: #2b84c0;
 }
 
 .green {
-    background-color: #27ae60;
+    background-color: #bfd834;
 }
 
 .graph .labels.x-labels, .graph .labels.y-labels {
