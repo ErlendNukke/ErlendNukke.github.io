@@ -166,8 +166,7 @@ function placeProgress(progress, xp) {
 		line.setAttributeNS(null, "x2", coordinatesArr[i + 1].x);
 		line.setAttributeNS(null, "y2", coordinatesArr[i + 1].y);
 		line.setAttributeNS(null, "stroke", "black");
-		line.setAttributeNS(null, "stroke-width", "1.5");
-		line.setAttributeNS(null, "fill", "rgb(121,0,121)");
+		line.setAttributeNS(null, "stroke-width", "1.8");
 		lines.appendChild(line);
 	}
 

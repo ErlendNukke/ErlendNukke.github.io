@@ -100,7 +100,7 @@ main {
 }
 
 .progress-size {
-    width: 152vh;
+    width: 1120px;
     height: 654px;
 }
 
@@ -268,9 +268,8 @@ main {
 }
 
 .line {
-    stroke: #ecf0f1;
-    stroke-width: 1.5;
-    fill: rgba(121, 0, 121, 0.8);
+    stroke: #303030;
+    stroke-width: 1.9;
 }
 
 .bar {
