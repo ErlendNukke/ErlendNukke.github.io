@@ -12,7 +12,7 @@ h1, h2 {
 
 h1 {
     font-size: 45px;
-    padding: 35px;
+    padding: 10px;
 }
 
 h2 {
@@ -24,13 +24,23 @@ p {
     margin: 20px;
 }
 
+.banner {
+    margin-top: 20px;
+    margin-bottom: 120px;
+}
+
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    background: url(bg.jpg)no-repeat;
+    background: url(bg.jpg) no-repeat center center fixed;
+    background-size: cover; /* Ensures the background image covers the entire screen */
     color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
 }
 
 /* Header */
@@ -49,14 +59,14 @@ header {
     color: white;
 }
 
-/* Main */
 main {
     width: 100%;
+    height: 100vh; /* Full viewport height */
     display: flex;
+    flex-wrap: wrap; /* Allows the wrappers to wrap to the next line */
+    padding: 10px; /* Adds padding around the main container */
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 20px;
+    align-content: flex-start;
 }
 
 /* Wrapper and Input Box Styles */
@@ -71,12 +81,13 @@ main {
     -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     color: white;
-    padding: 30px 40px;
+    padding: 20px 25px;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    margin: 10px; /* Adds margin around each wrapper */
 }
 
 .wrapper h1 {
-    font-size: 36px;
-    text-align: center;
+    font-size: 20px;
     color: white;
 }
 
@@ -88,6 +99,11 @@ main {
     color: white;
 }
 
+.progress-size {
+    width: 152vh;
+    height: 88.8vh;
+}
+
 .input-box input {
     width: 100%;
     height: 100%;
@@ -97,7 +113,7 @@ main {
     border: 2px solid;
     border-radius: 40px;
     font-size: 16px;
-    color: white;
+    color: rgba(255, 255, 255, 0.199);
     padding: 20px 45px 20px 20px;
 }
 
@@ -117,7 +133,6 @@ main {
 .wrapper .btn {
     width: 100%;
     height: 45px;
-    background-color: white;
     border: none;
     outline: none;
     border-radius: 40px;
@@ -139,18 +154,9 @@ main {
 }
 
 /* XP Display */
-.xp-display {
-    height: 100%;
-    width: 23vw;
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.3);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+.xpDisplay {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-    padding: 20px;
+    justify-content: space-between;
 }
 
 .module-name, .module-level, .module-xp {
@@ -247,24 +253,6 @@ main {
 
 .green {
     background-color: #27ae60;
-}
-
-/* Progress Chart */
-#progress-section {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#progress {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: auto;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
 }
 
 .graph .labels.x-labels, .graph .labels.y-labels {

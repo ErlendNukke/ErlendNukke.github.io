@@ -11,9 +11,7 @@ import { getModuleLevel } from "./tablesAndGraphs/userDashboard.js";
 import { calculateModuleXP } from "./tablesAndGraphs/userDashboard.js";
 import { audits } from "./tablesAndGraphs/audits.js";
 import { placeProgress } from "./tablesAndGraphs/progressChart.js";
-import { getPassFail, placeFailCharts } from "./tablesAndGraphs/passFailAnalysis.js";
 import { fetchGraphInfo } from "./getInfo/graphInfo.js";
-import { fetchProgressInfo } from "./getInfo/modulResultInfo.js";
 
 
 userData();
@@ -29,11 +27,9 @@ export async function intraPage() {
 	const userInfo = await fetchUserData();
 	const levelInfo = await fetchLevelData();
 	const graphInfo = await fetchGraphInfo();
-	const passAndFailInfo = await fetchProgressInfo();
 
 	// Necessary variables for displaying data.
 	const { div01XP, piscineGO, piscineJS } = await calculateModuleXP(userInfo.xps);
-	const { goExercises, jsExercises } = getPassFail(passAndFailInfo);
 
 	// Display the data received.
 	displayName(`${userInfo.firstName} ${userInfo.lastName}`);
@@ -42,7 +38,6 @@ export async function intraPage() {
 	displayModuleXP(div01XP, piscineGO, piscineJS);
 
 	audits(userInfo.auditRatio, userInfo.totalUp, userInfo.totalDown);
-	placeFailCharts(goExercises, jsExercises);
 	placeProgress(graphInfo, div01XP);
 
 }
