@@ -25,3 +25,360 @@
 .green {
     background: green;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #d6dee1;
+	border-radius: 20px;
+	border: 2px solid transparent;
+	background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #a8bbbf;
+}
+
+/* Scrollbar end */
+
+body {
+	font-family: "Roboto", sans-serif;
+	background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+header {
+	background-color: rgba(0, 0, 0, 0.2);
+	height: 10vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+#name-in-header {
+	color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "lato", sans-serif;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	row-gap: 20px;
+}
+
+/* Buttons */
+.btn {
+	transition: all 0.3s ease-in-out;
+}
+
+.btn {
+	width: 180px;
+	height: 50px;
+	border-radius: 50px;
+	background-image: white;
+	box-shadow: 0 20px 20px -6px rgba(109, 132, 175, 0.5);
+	outline: none;
+	cursor: pointer;
+	border: none;
+	font-size: 24px;
+	color: #1d3158;
+	font-weight: bold;
+}
+
+.btn:hover {
+	transform: translateY(3px);
+	box-shadow: none;
+}
+
+.btn:active {
+	opacity: 0.5;
+}
+/* Buttons end */
+/* xp-display */
+#levels {
+	height: 30vh;
+	width: 100%;
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.xp-display {
+	height: 100%;
+	width: 23vw;
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 0px 19px 7px rgba(0, 0, 0, 0.75);
+	/*background: radial-gradient(circle, rgba(111, 191, 187, 1) 0%, rgba(129, 123, 223, 1) 100%, rgba(149, 210, 203, 1) 100%);*/
+	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: radial-gradient(circle, rgba(240, 242, 242, 1) 0%, rgba(129, 123, 223, 1) 100%, rgba(172, 142, 214, 1) 100%);
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.xp-div {
+	height: 5vh;
+	width: 100%;
+}
+
+.module-xp {
+	font-weight: bold;
+}
+
+.lv-div {
+	height: 15vh;
+	width: 100%;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+.module-lv {
+	font-size: 70px;
+	font-weight: bold;
+}
+
+.module-div {
+	height: 5vh;
+	width: 100%;
+}
+
+.module-name {
+	font-weight: bold;
+}
+
+/* Audit pie chart */
+#audit-ratio {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 5vw;
+	border-radius: 10px;
+	box-shadow: 0px 0px 19px 7px rgba(0, 0, 0, 0.75);
+	background-color: transparent;
+}
+
+#audit-chart {
+	margin: 0 auto;
+	transform: rotate(-90deg);
+	background: #ddd;
+	border-radius: 50%;
+	display: block;
+}
+
+.audit {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	padding: 20px;
+	background: radial-gradient(circle, rgba(240, 242, 242, 1) 0%, rgba(129, 123, 223, 1) 100%, rgba(172, 142, 214, 1) 100%);
+	box-shadow: 0px 0px 19px 7px rgba(0, 0, 0, 0.75);
+}
+
+.left {
+	border-radius: 10px 0 0 10px;
+}
+
+.right {
+	border-radius: 0 10px 10px 0;
+}
+
+.pie {
+	fill: greenyellow;
+	stroke: red;
+	stroke-width: 200;
+	stroke-dasharray: 0 628;
+	transition: stroke-dasharray 0.3s ease;
+}
+
+figcaption {
+	margin-bottom: 20px;
+	font-size: 22px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.legend {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	column-gap: 10px;
+}
+
+.space {
+	margin-top: 10px;
+}
+
+.fake-news {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: red;
+}
+
+.green {
+	background-color: greenyellow;
+}
+
+/* Audit pie end */
+
+/* Progress chart */
+#progress-section {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#progress {
+	width: 90%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: auto;
+	border-radius: 10px;
+	box-shadow: 0px 0px 19px 7px rgba(0, 0, 0, 0.75);
+}
+
+#progress figcaption {
+	margin-top: 20px;
+	margin-bottom: -50px;
+}
+
+.graph .labels.x-labels {
+	text-anchor: middle;
+}
+
+.graph .labels.y-labels {
+	text-anchor: end;
+}
+
+/*.graph {
+}*/
+
+.graph .grid {
+	stroke: #ccc;
+	stroke-dasharray: 0;
+	stroke-width: 1;
+}
+
+.labels {
+	font-size: 13px;
+}
+
+.label-title {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12px;
+	fill: black;
+}
+
+.data {
+	fill: red;
+	stroke-width: 1;
+}
+
+.axeText {
+	z-index: 9999;
+	transition: max-height 0.3s ease;
+	font-size: 0;
+	fill: black;
+	overflow: hidden;
+}
+
+.axe:hover + .axeText {
+	font-size: 15px;
+}
+
+.line {
+	stroke: #ccc;
+	stroke-width: 1.5;
+	fill: rgb(121, 0, 121);
+}
+
+/* Pass/Fail ratio */
+#pass-fail {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	column-gap: 5vw;
+}
+
+/* Fail charts */
+.pass-fail-div {
+	height: 500px;
+	background: radial-gradient(circle, rgba(240, 242, 242, 1) 0%, rgba(129, 123, 223, 1) 100%, rgba(172, 142, 214, 1) 100%);
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+	box-shadow: 0px 0px 19px 7px rgba(0, 0, 0, 0.75);
+	overflow: auto;
+}
+
+.pass-fail-figcaption {
+	border-bottom: 1px solid black;
+	margin-bottom: -10px;
+}
+
+.fail-pass-figure {
+	padding: 20px;
+}
+
+.bar {
+	fill: #aaa; /* changes the background */
+	height: 22px;
+	transition: fill 0.3s ease;
+	cursor: pointer;
+}
+
+.bar:hover,
+.bar:focus {
+	fill: red !important;
+}
+
+.over {
+	fill: #8f8d8d;
+}
+
+/* Footer */
+footer {
+	height: 10vh;
+	width: 100%;
+}
