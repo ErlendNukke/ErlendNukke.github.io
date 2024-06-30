@@ -196,6 +196,8 @@ main {
 .logout {
     width: 90px;
     height: 25px;
+    font-size: 12px;
+
 }
 
 /* Audit Chart */
