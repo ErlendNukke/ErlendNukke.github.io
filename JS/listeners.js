@@ -1,7 +1,7 @@
 import { logout as performLogout } from "./logout.js";
 import { login } from "./login.js";
 
-function loginHandler() {
+export function loginHandler() {
     const loginButton = document.getElementById("login-submit");
     if (loginButton) {
         loginButton.addEventListener("click", (e) => {
