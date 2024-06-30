@@ -38,7 +38,34 @@ function getPassFail(progress) {
 			continue;
 		}
 	}
-}
+
+	 // Create an object that has all the js-piscine excercise passes and fails.
+	 const jsExercises = {};
+	 for (let i = 0; i < js.length; i++) {
+		 const pathSplit = js[i].path.split("/");
+		 const name = pathSplit[pathSplit.length - 1];
+ 
+		 if (!Object.keys(jsExercises).includes(name)) {
+			 jsExercises[name] = {
+				 pass: 0,
+				 fail: 0,
+			 };
+		 }
+ 
+		 if (js[i].grade === 1) {
+			 jsExercises[name].pass += 1;
+			 continue;
+		 }
+ 
+		 if (js[i].grade === 0) {
+			 jsExercises[name].fail += 1;
+			 continue;
+		 }
+	 }
+ 
+	 return { goExercises, jsExercises };
+ }
+
 
 
 function placePassFailRatio(go, js) {

@@ -11,7 +11,7 @@ import { getModuleLevel } from "./tablesAndGraphs/userDashboard.js";
 import { calculateModuleXP } from "./tablesAndGraphs/userDashboard.js";
 import { audits } from "./tablesAndGraphs/audits.js";
 import { placeProgress } from "./tablesAndGraphs/progressChart.js";
-import { getPassFail } from "./tablesAndGraphs/passFailAnalysis.js";
+import { getPassFail, placeFailCharts } from "./tablesAndGraphs/passFailAnalysis.js";
 import { fetchGraphInfo } from "./getInfo/graphInfo.js";
 import { fetchProgressInfo } from "./getInfo/modulResultInfo.js";
 
@@ -42,7 +42,7 @@ export async function intraPage() {
 	displayModuleXP(div01XP, piscineGO, piscineJS);
 
 	audits(userInfo.auditRatio, userInfo.totalUp, userInfo.totalDown);
-	getPassFail(goExercises, jsExercises);
+	placeFailCharts(goExercises, jsExercises);
 	placeProgress(graphInfo, div01XP);
 
 }
