@@ -6,8 +6,8 @@ const modules = ["DIV-01", "PISCINE GO", "PISCINE JS"];
 
 // Display the name of the user.
 export async function displayName(name) {
-	const h1 = document.getElementById("username");
-	h1.textContent = name;
+	const h3 = document.getElementById("username");
+	h3.textContent = "Welcome ", name;
 }
 
 

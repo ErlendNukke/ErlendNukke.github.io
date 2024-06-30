@@ -36,7 +36,7 @@ export async function intraPage() {
 	const { goExercises, jsExercises } = getPassFail(passAndFailInfo);
 
 	// Display the data received.
-	displayName(`${userInfo.firstName} "${userInfo.login}" ${userInfo.lastName}`);
+	displayName(`${userInfo.firstName} ${userInfo.lastName}`);
 	displayAudit(userInfo.auditRatio, userInfo.totalUp, userInfo.totalDown);
 	displayModuleLevel(getModuleLevel(levelInfo));
 	displayModuleXP(div01XP, piscineGO, piscineJS);
