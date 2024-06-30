@@ -149,6 +149,8 @@ function placeProgress(progress, xp) {
 		axeText.setAttributeNS(null, "font-weight", "bold");
 		axeText.textContent = `${dateToText} +${exercise.amount / 1000}kB`;
 		axes.appendChild(axeText);
+
+		axe.parentNode.insertBefore(axeText, axe.nextSibling);
 	});
 
 	// Add Lines.

@@ -305,3 +305,13 @@ main {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #bdc3c7;
 }
+
+.axeText {
+    display: none;
+    font-size: 12px;
+    fill: black;
+}
+
+.axe:hover + .axeText {
+    display: block;
+}
