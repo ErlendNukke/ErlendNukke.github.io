@@ -24,5 +24,3 @@ Open ```ErlendNukke.github.io``` in your browser and log in using your intra use
 
 - Erlend Nukke
 
-olen login.js 11 rea juures
-

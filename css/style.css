@@ -101,7 +101,7 @@ main {
 
 .progress-size {
     width: 152vh;
-    height: 88.8vh;
+    height: 654px;
 }
 
 .input-box input {
@@ -285,44 +285,6 @@ main {
     fill: gray !important;
 }
 
-/* Pass/Fail Ratio */
-#pass-fail {
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    column-gap: 5vw;
-}
-
-.pass-fail-div {
-    height: 500px;
-    background: rgba(0, 0, 0, 0.3);
-    padding: 10px;
-    border: 1px solid #34495e;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
-    overflow: auto;
-}
-
-.pass-fail-figcaption {
-    border-bottom: 1px solid #34495e;
-    margin-bottom: -10px;
-}
-
-.fail-pass-figure {
-    padding: 20px;
-}
-
-/* Footer */
-footer {
-    height: 10vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-}
 
 /* Scrollbar */
 ::-webkit-scrollbar {

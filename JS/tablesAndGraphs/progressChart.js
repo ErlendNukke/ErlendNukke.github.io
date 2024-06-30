@@ -66,7 +66,7 @@ function placeProgress(progress, xp) {
 	gridXtext.classList.add("labels", "y-labels");
 	const orderedMonths = orderMonths();
 	orderedMonths.forEach((month, index) => {
-		let x = index * 83 + 165;
+		let x = index * 77 + 165;
 		let y = 520;
 
 		const monthText = document.createElementNS(svgNS, "text");
@@ -127,7 +127,7 @@ function placeProgress(progress, xp) {
 
 		cumulativeXP += exercise.amount;
 
-		const x = (364 - (today - past) / (1000 * 60 * 60 * 24)) * 2.7 + 120;
+		const x = (364 - (today - past) / (1000 * 60 * 60 * 24)) * 2.60 + 120;
 		const yPercentage = (cumulativeXP / xp) * 100;
 		const y = 500 - (400 / 100) * yPercentage;
 
