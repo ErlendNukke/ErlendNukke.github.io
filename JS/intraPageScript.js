@@ -32,7 +32,7 @@ export async function intraPage() {
 	const passAndFailInfo = await fetchProgressInfo();
 
 	// Necessary variables for displaying data.
-	const { div01XP, piscineGO, piscineJS } = calculateModuleXP(userInfo.xps);
+	const { div01XP, piscineGO, piscineJS } = await calculateModuleXP(userInfo.xps);
 	const { goExercises, jsExercises } = getPassFail(passAndFailInfo);
 
 	// Display the data received.
