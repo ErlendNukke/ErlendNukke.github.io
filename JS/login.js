@@ -31,7 +31,7 @@ export async function login() {
 		if (response.ok) {
 			const responseData = await response.json();
 			createSession(responseData);
-			alert("Logged in successfully!");
+			// alert("Logged in successfully!");
 			window.location.href = "intraPage.html";
 		}
 
