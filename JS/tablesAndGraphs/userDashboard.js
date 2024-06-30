@@ -80,7 +80,7 @@ export async function calculateModuleXP(xps) {
 			piscineJS += xps[i].amount;
 			continue;
 		}
-		if (xps[i].path.includes("div-01")) div01 += xps[i].amount;
+		if (xps[i].path.includes("div-01")) div01XP += xps[i].amount;
 	}
 
 	// Return the xp values.
