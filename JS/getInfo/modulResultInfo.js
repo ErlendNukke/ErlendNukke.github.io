@@ -24,7 +24,6 @@ const progressInfoQuery = `
 		});
 
 		const jsonData = await info.json();
-		console.log(data);
 		const progressData = jsonData.data.progress;
 
     console.log("MODULRESULTINFO:", progressData);
