@@ -8,12 +8,7 @@
 
 ## Project Description
 
-The webpage at ErlendNukke.github.io is a login page for viewing your intra profile information. It consists of:
-
-Header: Displays user name, username, and XP and level for each module/piscine.
-Audit Ratio Section: Shows audits given, received, and the overall ratio.
-Progress Over Time Graph: Visual representation of progress.
-Piscine Exercise Pass/Fail Ratios: Displays success rates for piscine exercises.
+The webpage at ErlendNukke.github.io is a login page for viewing your intra profile information.
 
 
 ## How to Run the Project
